@@ -1,0 +1,10 @@
+ALTER TABLE MATIERE
+ADD CONSTRAINT FK_matiere_niveau FOREIGN KEY(id_niveau)
+REFERENCES NIVEAU(id_niveau);
+
+ALTER TABLE EXERCICE
+ADD CONSTRAINT FK_exercice_niveau FOREIGN KEY(id_niveau)
+REFERENCES NIVEAU(id_niveau);
+
+ADD CONSTRAINT FK_exercice_matiere FOREIGN KEY(id_matiere)
+REFERENCES MATIERE(id_matiere);
