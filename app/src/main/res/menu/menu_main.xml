@@ -2,9 +2,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.mie.MainActivity">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+
+    <item android:id="@+id/matiere"
+        android:title="matiere">
+
+        <menu android:id="@+id/sous_menu">
+            <item android:id="@+id/menu_CP"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CP" />
+
+            <item android:id="@+id/menu_CE1"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CE1" />
+
+            <item android:id="@+id/menu_CE2"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CE2" />
+
+            <item android:id="@+id/menu_CM1"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CM1" />
+
+            <item android:id="@+id/menu_CM2"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CM2" />
+        </menu>
+
+    </item>
+
 </menu>

@@ -12,45 +12,54 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        TextView mGreetingText;
+        mGreetingText = (TextView) findViewById(R.id.activity_main_greeting_txt);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
     }
+
+    private Menu m = null;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        m = menu;
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.menu_CP:
+                m.setGroupEnabled(R.id.menu_CP, true);
+                Toast.makeText(this, "menu CP sélectionné", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.menu_CE1:
+                Toast.makeText(this, "menu CE1 sélectionné", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.menu_CE2:
+                Toast.makeText(this, "menu CE2 sélectionné", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.menu_CM1:
+                Toast.makeText(this, "menu CM1 sélectionné", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.menu_CM2:
+                Toast.makeText(this, "menu CM2 sélectionné", Toast.LENGTH_LONG).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
-        return super.onOptionsItemSelected(item);
     }
 }
