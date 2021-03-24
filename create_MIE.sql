@@ -35,7 +35,5 @@ CREATE TABLE UTILISATEUR
 	prenom varchar(25),
 	tel int(10),
 	mail varchar(50),
-	adresse varchar(50),
-	cp varchar(5),
 constraint PK_id_utilisateur primary key (id_utilisateur))
 ENGINE=INNODB;
