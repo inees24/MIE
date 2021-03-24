@@ -57,6 +57,21 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_CM2:
                 Toast.makeText(this, "menu CM2 sélectionné", Toast.LENGTH_LONG).show();
                 return true;
+            case R.id.menu_CP2:
+                Toast.makeText(this, "menu CP sélectionné", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.menu_CE12:
+                Toast.makeText(this, "menu exercice CE1 sélectionné", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.menu_CE22:
+                Toast.makeText(this, "menu exercice CE2 sélectionné", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.menu_CM12:
+                Toast.makeText(this, "menu exercice CM1 sélectionné", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.menu_CM22:
+                Toast.makeText(this, "menu exercice CM2 sélectionné", Toast.LENGTH_LONG).show();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

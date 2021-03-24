@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.mie.MainActivity">
 
-    <item android:id="@+id/matiere"
-        android:title="matiere">
+    <item android:id="@+id/cours"
+        android:title="cours">
 
         <menu android:id="@+id/sous_menu">
             <item android:id="@+id/menu_CP"
@@ -32,6 +32,39 @@
                 app:showAsAction="never"
                 android:title="@string/CM2" />
         </menu>
+
+    </item>
+
+    <item android:id="@+id/exercice"
+        android:title="exercice">
+
+        <menu android:id="@+id/sous_menu2">
+            <item android:id="@+id/menu_CP2"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CP"/>
+
+            <item android:id="@+id/menu_CE12"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CE1"/>
+
+            <item android:id="@+id/menu_CE22"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CE2"/>
+
+            <item android:id="@+id/menu_CM12"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CM1"/>
+
+            <item android:id="@+id/menu_CM22"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/CM2"/>
+        </menu>
+
 
     </item>
 
