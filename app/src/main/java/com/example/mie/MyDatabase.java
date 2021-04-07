@@ -31,7 +31,7 @@ class MyDatabase extends SQLiteOpenHelper {
     private static final String COLUMN_MDP = "mdp";
     private static final String COLUMN_NAME3 = "nom";
     private static final String COLUMN_FIRSTNAME = "prenom";
-    private static final String COLUMN_TEL = "tel";
+    private static final String COLUMN_LOGIN = "login";
     private static final String COLUMN_MAIL = "mail";
 
     // determination variables quatrieme table
@@ -66,7 +66,7 @@ class MyDatabase extends SQLiteOpenHelper {
                 COLUMN_MDP + "TEXT" +
                 COLUMN_NAME3 + " TEXT " +
                 COLUMN_FIRSTNAME + "TEXT " +
-                COLUMN_TEL + "INTEGER " +
+                COLUMN_LOGIN + "TEXT " +
                 COLUMN_MAIL + "TEXT ";
         db.execSQL(query);
 
